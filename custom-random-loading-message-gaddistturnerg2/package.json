@@ -1,0 +1,22 @@
+{
+  "name": "csci243",
+  "version": "0.0.1",
+  "description": "App outputs radomized loading message",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaddistturnerg2/CSCI243.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaddistturnerg2/CSCI243/issues"
+  },
+  "homepage": "https://github.com/gaddistturnerg2/CSCI243#readme",
+  "dependencies": {
+    "funnies": "^2.0.0"
+  }
+}
