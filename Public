@@ -1,0 +1,25 @@
+$(document).ready(()=>{
+    $('#submit').on('click',(e)=>{
+        e.preventDefault();
+        //grab data from page
+        let num1 = $("#num1").val();
+        let num2 = $("#num2").val();
+        let operator = $("input[name='operation']:checked").val();
+        //send data to post
+        $.ajax({
+            url: "/calculate",
+            method: "POST",
+            data:{
+                num1:num1,
+                num2:num2,
+                operator:operator
+            }
+        }) //catch data from post
+        .done((data)=>{
+            $("#result").html("Result: "+data.num1+" "+ data.operator +" "+data.num2+" = "+data.result);
+        })
+        .fail((xhr)=>{
+            console.log("Error occured");
+        });
+    })
+});
